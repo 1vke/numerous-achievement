@@ -5,8 +5,8 @@ public class RomanNumeralConverter {
         StringBuilder output = new StringBuilder();
         int number = value;
 
-        String[] romanNumerals = {"M", "D", "C", "L", "X", "V", "I"};
-        int[] romanNumeralValues = {1000, 500, 100, 50, 10, 5, 1};
+        String[] romanNumerals = {"M", "CM", "D", "C", "XC", "L", "X", "IX", "V", "I"};
+        int[] romanNumeralValues = {1000, 900, 500, 100, 90, 50, 10, 9, 5, 1};
 
         for (int i = 0; i < romanNumerals.length; i++) {
             while (number >= romanNumeralValues[i]) {
