@@ -76,4 +76,10 @@ public class RomanNumeralConverterTest {
 
         Assertions.assertEquals("M", rnc.convert(1000));
     }
+    @Test
+    public void testConversionOf2844() {
+        RomanNumeralConverter rnc = new RomanNumeralConverter();
+
+        Assertions.assertEquals("MMDCCCXLIV", rnc.convert(2844));
+    }
 }
