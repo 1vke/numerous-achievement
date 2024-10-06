@@ -11,6 +11,12 @@ public class RomanNumeralConverterTest {
         Assertions.assertEquals("I", rnc.convert(1));
     }
     @Test
+    public void testConversionOf4() {
+        RomanNumeralConverter rnc = new RomanNumeralConverter();
+
+        Assertions.assertEquals("IV", rnc.convert(4));
+    }
+    @Test
     public void testConversionOf5() {
         RomanNumeralConverter rnc = new RomanNumeralConverter();
 
