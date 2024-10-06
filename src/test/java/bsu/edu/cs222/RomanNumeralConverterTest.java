@@ -41,21 +41,27 @@ public class RomanNumeralConverterTest {
         Assertions.assertEquals("C", rnc.convert(100));
     }
     @Test
+    public void testConversionOf499() {
+        RomanNumeralConverter rnc = new RomanNumeralConverter();
+
+        Assertions.assertEquals("CDXCIX", rnc.convert(499));
+    }
+    @Test
     public void testConversionOf500() {
         RomanNumeralConverter rnc = new RomanNumeralConverter();
 
         Assertions.assertEquals("D", rnc.convert(500));
     }
     @Test
-    public void testConversionOf1000() {
-        RomanNumeralConverter rnc = new RomanNumeralConverter();
-
-        Assertions.assertEquals("M", rnc.convert(1000));
-    }
-    @Test
     public void testConversionOf999() {
         RomanNumeralConverter rnc = new RomanNumeralConverter();
 
         Assertions.assertEquals("CMXCIX", rnc.convert(999));
+    }
+    @Test
+    public void testConversionOf1000() {
+        RomanNumeralConverter rnc = new RomanNumeralConverter();
+
+        Assertions.assertEquals("M", rnc.convert(1000));
     }
 }
