@@ -35,6 +35,12 @@ public class RomanNumeralConverterTest {
         Assertions.assertEquals("L", rnc.convert(50));
     }
     @Test
+    public void testConversionOf99() {
+        RomanNumeralConverter rnc = new RomanNumeralConverter();
+
+        Assertions.assertEquals("XCIX", rnc.convert(99));
+    }
+    @Test
     public void testConversionOf100() {
         RomanNumeralConverter rnc = new RomanNumeralConverter();
 
