@@ -1,7 +1,5 @@
 package bsu.edu.cs222;
 
-import java.util.HashMap;
-
 public class RomanNumeralConverter {
     public String convert(int value) {
         StringBuilder output = new StringBuilder();
